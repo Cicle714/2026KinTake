@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class 0424 : MonoBehaviour
+public class kin0424 : MonoBehaviour
 {
 
-    int[] intval[];
+    int[] intval;
 GameObject[] gameObjects;
     
 
