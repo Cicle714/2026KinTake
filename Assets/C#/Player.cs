@@ -5,20 +5,25 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField]
-    private float speed;
-    private int roteNum;
+    private float speed; //“®‚«‚Ì‘¬‚³
+    private int roteNum; //Œü‚«
+    public int PlayerHp; //‘Ì—Í
 
 
-    private Vector2 moveInput = Vector2.zero;
+    private Vector2 moveInput = Vector2.zero; //@ˆÚ“®
+
 
     [SerializeField]
-    private GameObject Bullet;
+    private GameObject Bullet; //©g‚ª”ò‚Î‚·’e
 
     Rigidbody rb;
 
     [SerializeField]
     private float JumpForce;
 
+    /// <summary>
+    ///InputSystem‚ÌŠˆ—p 
+    /// </summary>
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction attackAction;
@@ -35,13 +40,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        PlayerMove();
 
-            //I
-       
+        if(PlayerHp > 0)
+        PlayerMove(); //ˆÚ“®
 
     }
+    /// <summary>
+    /// Œü‚«‚ÆˆÚ“®ˆ—
+    /// </summary>
     void PlayerMove()
     {
         if (moveInput.y > 0)
