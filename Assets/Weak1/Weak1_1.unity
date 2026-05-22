@@ -638,8 +638,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: c6867f09-e76c-4cb5-959b-419e2f7fb76c
-    m_ActionName: 'Player/Continue[/Keyboard/space]'
+    m_ActionId: f763e5b1-5e81-46b6-a943-af8453fe599b
+    m_ActionName: 'Player/Retry[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
