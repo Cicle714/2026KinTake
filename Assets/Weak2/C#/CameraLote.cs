@@ -40,6 +40,9 @@ public class CameraLote: MonoBehaviour
     }
     public void OnClickLeft(InputAction.CallbackContext context)
     {
+
+        if (!context.started) return;
+
         Vector3 center = new Vector3(
             Screen.width / 2,
             Screen.height / 2,
@@ -49,7 +52,7 @@ public class CameraLote: MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(center);
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 10f))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 30f))
         {
 
             if (hit.collider.gameObject.GetComponent<Enemy2>())

@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 7320021984351552230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7724317898311292377}
@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 7724317898311292377}
   - component: {fileID: 2965838571629056412}
   - component: {fileID: 7097825987213180213}
+  - component: {fileID: 651936904937589308}
   m_Layer: 5
   m_Name: DamageNum
   m_TagString: Untagged
@@ -181,3 +182,15 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!114 &651936904937589308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7978504525597422236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639e1765607dd6c4c9e1c95ebb3dd91a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageEfe
