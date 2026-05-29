@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager2 : MonoBehaviour
@@ -11,6 +12,10 @@ public class GameManager2 : MonoBehaviour
     private Text EnemyNumText;
     [SerializeField]
     private Text gameClear;
+
+    private float SceneMoveCount = 0;
+    private float SceneMoveTime = 2;
+
     void Start()
     {
         EnemyNumNow = EnemyNum;
@@ -21,7 +26,12 @@ public class GameManager2 : MonoBehaviour
         EnemyNumText.text = "Žc‚èEnemy " + (EnemyNum - EnemyCount).ToString();
         if (EnemyNum <= EnemyCount)
         {
+            SceneMoveCount+= Time.deltaTime;
             gameClear.gameObject.SetActive(true);
+            if(SceneMoveCount >= SceneMoveTime)
+            {
+                SceneManager.LoadScene("Weak2_Title");
+            }
         }
     }
 }

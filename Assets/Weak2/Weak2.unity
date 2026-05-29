@@ -1261,10 +1261,6 @@ MonoBehaviour:
     m_ActionName: 'Player/Bullet[/Keyboard/k]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: f763e5b1-5e81-46b6-a943-af8453fe599b
-    m_ActionName: 'Player/Retry[/Keyboard/space]'
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: c95b2375-e6d9-4b88-9c4c-c5e76515df4b
     m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -1305,22 +1301,6 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 961739754}
-        m_TargetAssemblyTypeName: CameraLote, Assembly-CSharp
-        m_MethodName: OnClickLeft
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 949f40cf-011b-498b-b4a6-92a184e9b5e8
-    m_ActionName: 'Weak2/LeftClick[/Mouse/leftButton]'
-  - m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 1515546285}
         m_TargetAssemblyTypeName: Player2, Assembly-CSharp
         m_MethodName: Retry
@@ -1333,8 +1313,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 807f01d7-caf5-4320-8724-c131b7e6f0d9
-    m_ActionName: 'Weak2/Retry[/Mouse/leftButton]'
+    m_ActionId: 47a6f789-a9b3-492d-a7fd-5cc0a6b8b4ff
+    m_ActionName: 'Weak2/Click[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 961739754}
+        m_TargetAssemblyTypeName: CameraLote, Assembly-CSharp
+        m_MethodName: OnClickLeft
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 32bca9ea-fa29-471d-83cc-27ce638bfc7b
+    m_ActionName: 'Weak2/Attack[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
