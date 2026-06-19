@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Weak1/Weak1_1.unity
     guid: d291c3e32d2c67a4d800c4a253ba8c5f
   - enabled: 1
+    path: Assets/Weak1/Weak1_2.unity
+    guid: 97fa092299b74fa49bdb646c2145d359
+  - enabled: 1
     path: Assets/Weak1/Weak1_Title.unity
     guid: 768573813c92e46479bb2014a004a7e1
   - enabled: 1

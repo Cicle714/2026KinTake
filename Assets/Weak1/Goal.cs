@@ -1,3 +1,4 @@
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,6 +19,8 @@ public class Goal : MonoBehaviour
         {
             GoalText.gameObject.SetActive(true);
             isGoal = true;
+            FindObjectOfType<Score>().ResultScore((int)Timer.CountDown);
+            Timer.CountStop = true;
         }
     }
 
@@ -26,9 +29,18 @@ public class Goal : MonoBehaviour
         if (isGoal)
         {
             MoveCount += Time.deltaTime;
-            if(MoveCount >= MoveTime)
+            if (MoveCount >= MoveTime)
             {
-                SceneManager.LoadScene("Weak1_Title");
+                for (int i = 0; i <= 10; i++)
+                {
+                    if (SceneManager.GetActiveScene().name == "Weak1_" + (i).ToString())
+                    {
+                        if (Application.CanStreamedLevelBeLoaded("Weak1_" + (i + 1).ToString()))
+                            SceneManager.LoadScene("Weak1_" + (i+1).ToString());
+                        else
+                            SceneManager.LoadScene("Weak1_Title");
+                    } 
+                }
             }
         }
     }

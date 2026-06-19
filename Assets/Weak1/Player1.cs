@@ -140,6 +140,9 @@ public class Player1 : MonoBehaviour
             IsGround = false;
         }
     }
-   
+   public void TimeUp()
+    {
+        PlayerHp = 0;
+    }
 
 }
