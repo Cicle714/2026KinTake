@@ -7,6 +7,8 @@ public class Goal : MonoBehaviour
 {
     [SerializeField]
     Text GoalText;
+    [SerializeField]
+    ParticleSystem GoalEffe;
 
     [SerializeField]
     private float MoveTime;
@@ -19,6 +21,7 @@ public class Goal : MonoBehaviour
         {
             GoalText.gameObject.SetActive(true);
             isGoal = true;
+            GoalEffe.gameObject.SetActive(true);
             FindObjectOfType<Score>().ResultScore((int)Timer.CountDown);
             Timer.CountStop = true;
         }
